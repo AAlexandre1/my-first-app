@@ -1,1 +1,8 @@
-<h1>This is the server component. {{ "Server" }} {{ serverID }} is currently {{ getServerStatus() }} </h1>
+<div class="container">
+  <p
+  [ngStyle] = "{backgroundColor: getColor()}"
+  [ngClass] = "{online: serverStatus === 'online'}"
+  >
+  <!-- Adds the status online if the server status is online. -->
+  {{ "Server" }} {{ serverID }} is currently {{ getServerStatus() }}</p>
+</div>

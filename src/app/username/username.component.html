@@ -1,0 +1,11 @@
+<div class="container">
+  <p>username works!</p>
+  <input
+  type="text"
+  class="form-control"
+  [(ngModel)] = "username">
+  <p> {{ username }} </p>
+  <button class="btn btn-primary"
+  [disabled] = "username === ''"
+  (click)= "username = ''" >Clear Username</button>
+</div>
